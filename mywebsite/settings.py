@@ -27,7 +27,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://kmd2meee9i.execute-api.us-east-2.amazonaws.com/"]
+ALLOWED_HOSTS = ["kmd2meee9i.execute-api.us-east-2.amazonaws.com"]
 
 
 # Application definition
@@ -91,7 +91,7 @@ DATABASES = {
         "NAME": "mywebsite",
         "USER": "postgres",
         "PASSWORD": 'Mountolympus@1234',
-        "HOST": "https://kmd2meee9i.execute-api.us-east-2.amazonaws.com/",
+        "HOST": "kmd2meee9i.execute-api.us-east-2.amazonaws.com",
         "PORT": "5433",
     }
 }
