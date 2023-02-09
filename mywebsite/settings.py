@@ -91,7 +91,7 @@ DATABASES = {
         "NAME": "mywebsite",
         "USER": "postgres",
         "PASSWORD": 'Mountolympus@1234',
-        "HOST": "kmd2meee9i.execute-api.us-east-2.amazonaws.com",
+        "HOST": "localhost",
         "PORT": "5433",
     }
 }
