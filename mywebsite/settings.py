@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["kmd2meee9i.execute-api.us-east-2.amazonaws.com","jonahebute.com","www.jonahebute.com"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
