@@ -142,4 +142,4 @@ STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS = ["127.0.0.1:8000","jonahebute.com","www.jonahebute.com","kmd2meee9i.execute-api.us-east-2.amazonaws.com"]
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:8000","https://jonahebute.com","https://www.jonahebute.com","https://kmd2meee9i.execute-api.us-east-2.amazonaws.com"]
