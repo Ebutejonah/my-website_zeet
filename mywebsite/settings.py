@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': "django.db.backends.postgresql",
         'NAME': "mywebdatabase",
         'USER': "jonah",
-        'PASSWORD': "Mountolympus1234",
+        'PASSWORD': config('PASSWORD'),
         'HOST': "database-2.cihcohde1qxm.us-west-2.rds.amazonaws.com",
         'PORT': "5432",
     }
