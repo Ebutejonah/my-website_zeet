@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["jonahebute.com","www.jonahebute.com","127.0.0.1","kmd2meee9i.execute-api.us-east-2.amazonaws.com"]
 
 
 # Application definition
@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'mywebsite.wsgi.application'
 DATABASES = {
     'default':{
         'ENGINE': "django.db.backends.postgresql",
-        'NAME': "mywebdatabase",
-        'USER': "jonah",
+        'NAME': config('NAME'),
+        'USER': config('USER'),
         'PASSWORD': config('PASSWORD'),
-        'HOST': "database-2.cihcohde1qxm.us-west-2.rds.amazonaws.com",
+        'HOST': config('HOST'),
         'PORT': "5432",
     }
     
@@ -135,10 +135,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'core/static'),]
 STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CSRF_TRUSTED_ORIGINS = ["127.0.0.1:8000","jonahebute.com","www.jonahebute.com","kmd2meee9i.execute-api.us-east-2.amazonaws.com"]
