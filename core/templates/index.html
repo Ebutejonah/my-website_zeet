@@ -29,7 +29,7 @@
             </div>
             <p class="font-bold dark:text-white text-2xl pt-10 pb-4">About Me</p>
             <p class="py-4 font-semibold dark:text-gray-400">Hello&nbsp;<i class="fa-solid fa-hand text-yellow-400"></i>, I'm <span class="text-blue-600 text-lg">Jonah!</span></p>
-            <p class="text-lg dark:text-gray-400">I'm a self-taught Full-stack web developer(backend heavy).</p>
+            <p class="text-lg dark:text-gray-400">I'm a Full-stack web developer(backend heavy).</p>
             <p class="dark:text-gray-400 pb-10 text-lg">I've being programming for a year now and I have some live projects under my belt. I built a fully functioning Netflix clone site. I've also built a social media platform that has a bit of a mix of facebook, twitter and instagram. I'm also working on developing an E-Commerce Website. I'm opened to working either remotely or at location.</p>
             <p class="text-2xl font-bold dark:text-white pb-4">Tech Stack</p>
             <div class="">
@@ -69,13 +69,43 @@
             </div>
             <div class="pb-8">
                 <p class="dark:text-white font-bold text-2xl pt-10 pb-4">Projects</p>
-                <ul class="list-disc">
-                    <li class="dark:text-gray-300 pb-3">A fully functioning Netflix Clone Web App: <a href="https://netchlix.com" class="text-red-500"><span>Netchlix.com</span></a></li>   
-                    <li class="dark:text-gray-300">A fully functioning Social Media Platform: <a href="https://socialsbyjonah.social" class="text-blue-500"><span>socialsbyjonah.social</span></a></li>    
-                </ul>    
+                <ul class="list-decimal">
+                    <li class="dark:text-gray-300 pb-3"><p class="font-semibold">A fully functioning Netflix Clone Web App: <a href="https://netchlix.com" class="text-red-500"><span>Netchlix.com</span></a></p>
+                        <ul>
+                            <li><p>Netchlix is a Netflix clone web app built majorly with Django and Tailwindcss. The django-allauth authentication module is incorporated into the project to handle registration and authentication. On creating an account, a user would also create a profile where "Maturity Level" is selected. Movies are available to each profile based on the maturity level selected. The project is on a live Postgres database served by Amazon Web Services'(AWS) Relational Database Service(RDS). Video files are served by the AWS S3 bucket service for best security.</p></li>
+                            <div class="flex">
+                                <div><a href="{%static 'ss1.jpg'%}"><img class="object-contain p-2" src="{%static 'ss1.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 'ss2.jpg'%}"><img class="object-contain p-2" src="{%static 'ss2.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 'ss3.jpg'%}"><img class="object-contain p-2" src="{%static 'ss3.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 'ss4.jpg'%}"><img class="object-contain p-2" src="{%static 'ss4.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 'ss5.jpg'%}"><img class="object-contain p-2" src="{%static 'ss5.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 'ss6.jpg'%}"><img class="object-contain p-2" src="{%static 'ss6.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 'ss7.jpg'%}"><img class="object-contain p-2" src="{%static 'ss7.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 'ss8.jpg'%}"><img class="object-contain p-2" src="{%static 'ss8.jpg'%}" alt=""></a></div>
+                            </div>
+                            <li><a class="underline text-red-500" href="https://github.com/giftedmatrix/django_netflix">Link to code on Github</a></li>
+                        </ul>
+                    </li>  
+                    <li class="dark:text-gray-300"><p class="font-semibold">A fully functioning Social Media Platform: <a href="https://socialsbyjonah.social" class="text-blue-500"><span>socialsbyjonah.social</span></a></p>
+                        <ul>
+                            <li><p>Socialsbyjonah is a social media web app built with Django and Tailwindcss. Authentication and logging in of users is coded by me as opposed the my "Netchlix Project" where authentication is handled by django all-auth. Logged In users can follow/unfollow other accounts on the platform, make/delete/like posts. A Logged In user can also search for users on the platform where the result of the search is based on the Logged In user's input. A Logged In user can navigate to his/her profile where all posts made by the Logged In user is available. A Logged In user can also view a list of accounts he/she follows and also those that follow him/her. The project is on a live Postgres database served by Amazon Web Services'(AWS) Relational Database Service(RDS). Uploaded files are served by the AWS S3 bucket service for best security.</p></li>
+                            <div class="flex">
+                                <div><a href="{%static 's1.jpg'%}"><img class="object-contain p-2" src="{%static 's1.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 's2.jpg'%}"><img class="object-contain p-2" src="{%static 's2.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 's3.jpg'%}"><img class="object-contain p-2" src="{%static 's3.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 's4.jpg'%}"><img class="object-contain p-2" src="{%static 's4.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 's5.jpg'%}"><img class="object-contain p-2" src="{%static 's5.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 's6.jpg'%}"><img class="object-contain p-2" src="{%static 's6.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 's7.jpg'%}"><img class="object-contain p-2" src="{%static 's7.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 's8.jpg'%}"><img class="object-contain p-2" src="{%static 's8.jpg'%}" alt=""></a></div>
+                                <div><a href="{%static 's9.jpg'%}"><img class="object-contain p-2" src="{%static 's9.jpg'%}" alt=""></a></div>
+                            </div>
+                            <li><a class="underline text-blue-500" href="https://github.com/giftedmatrix/django_social_webapp">Link to code on Github</a></li>
+                        </ul>
+                    </li>    
+                </ul>   
             </div>
         </div>  
     </div>
-</div>
-
+</div> 
 {%endblock%}
