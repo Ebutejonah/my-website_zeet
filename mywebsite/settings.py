@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["jonahebute.com","www.jonahebute.com","127.0.0.1","kmd2meee9i.execute-api.us-east-2.amazonaws.com"]
+ALLOWED_HOSTS = ["jonahebute.com","www.jonahebute.com","127.0.0.1","https://qjv7bf8efk.execute-api.us-west-2.amazonaws.com/"]
 
 
 # Application definition
@@ -130,4 +130,4 @@ STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:8000","https://jonahebute.com","https://www.jonahebute.com","https://kmd2meee9i.execute-api.us-east-2.amazonaws.com"]
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:8000","https://jonahebute.com","https://www.jonahebute.com","https://qjv7bf8efk.execute-api.us-west-2.amazonaws.com/"]
